@@ -6,7 +6,17 @@ const themeIcon = document.getElementById("theme-icon");
 const res = document.getElementById("result");
 const toast = document.getElementById("toast");
 
+
+const client_id = "22690468768696741-6vs86auam7e3ubmcij8r7l8ngap1kd8s.apps.googleusercontent.com"
+const db ="mongodb+srv://riahi:riahi123654@cluster0.xwzg72p.mongodb.net/?retryWrites=true&w=majority"
+const client="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zeae"
+
+
 function calculate(value) {
+
+    console.log(client_id)
+  console.log(db)
+  console.log(client)
   const calculatedValue = eval(value || null);
   if (isNaN(calculatedValue)) {
     res.value = "Can't divide 0 with 0";
